@@ -1,0 +1,14 @@
+{
+  "name": "storytiles",
+  "version": "1.0.0",
+  "description": "Story generator inspired from Story Cubes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Morgan CUGERONE",
+  "license": "ISC"
+}

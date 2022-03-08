@@ -1,0 +1,94 @@
+body {
+  font-family: "Arial";
+  display: flex;
+  flex-direction: column;
+  margin: 10vh auto;
+  padding: 10px;
+  max-width: 760px;
+}
+
+details {
+  margin-bottom: 24px;
+}
+
+summary {
+  margin-bottom: 16px;
+  padding: 4px;
+}
+summary:focus {
+  outline: 4px solid yellow;
+}
+
+.feedback {
+  margin-bottom: 24px;
+  padding: 4px;
+}
+
+.storyboard {
+  margin: 0 auto 16px;
+  padding-left: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.card-wrapper {
+  border-radius: 6px;
+  padding: 8px;
+  margin: 4px;
+}
+
+.card {
+  position: relative;
+  padding: 0.5em;
+  border-radius: 6px;
+  border: 2px solid #333;
+  background: white;
+}
+.card svg {
+  width: 60px;
+  height: 60px;
+}
+
+.count {
+  display: block;
+  position: absolute;
+  padding: 4px 8px;
+  color: white;
+  background-color: deeppink;
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+  font-weight: bold;
+}
+
+.ui-button {
+  width: 300px;
+  font-size: 24px;
+  padding: 1em;
+  margin: 0 auto 1.5em;
+  border-radius: 0.5em;
+  border: none;
+  background-color: deeppink;
+  color: white;
+  font-weight: bold;
+}
+
+button:focus {
+  outline: 4px solid yellow;
+}
+
+/* Hiding class, making content visible only to screen readers but not visually */
+/* "sr" meaning "screen-reader" */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
