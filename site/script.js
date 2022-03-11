@@ -194,6 +194,10 @@ const StoryGenerator = function (storyBoard) {
       Array.from(storyBoard.querySelectorAll(".card")).forEach(
       function addOnCardClickEvent(card) {
         card.addEventListener("click", function onCardClick(event) {
+		  // Disables clicks once selection is complete.
+		  if (pickedForSort.length === 9) {
+		  	return;	
+		  }
 
           // If last selected is clicked, removes it from pickedForSort.
           if (pickedForSort.length > 0 && pickedForSort[pickedForSort.length - 1] === card) {
